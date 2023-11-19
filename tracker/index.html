@@ -128,63 +128,7 @@ background-color: rgba(165, 42, 42, 0.77);
     cursor: pointer;
 }
     </style>
-    <h3>Expenses Tracker</h3>
-    <h1 id="whole_income">0</h1>
-    <button id="clear_btn">Clear All</button>
-    <div class="container">
-        <div class="amount-expen">
-            <div class="amount">
-                <h3>INCOME</h3>
-                <h1 id="amount_output">+0</h1>
-                <input type="number" placeholder="Enter amount paid in" id="amount_paid">
-            </div>
-
-            <div class="exp">
-                <h3>ExPENSES</h3>
-                <h1 id="expenses_figure">-0</h1>
-                <input type="number" placeholder="Enter expenses amount" id="expenses" >
-            </div>
-        </div>
-
-        <div class="amount-expen-li">
-            <div class="amount-li">
-                <input type="text" placeholder="Enter the Source here" id="source_el">
-                <ul id="income_li"> </ul>
-                <p id="source_li_come"></p>
-
-            </div>
-            <div class="expen-li">
-                <p>Source Of Income</p>
-                <ul id="exp_li"></ul> 
-            </div>
-        </div>
-
-        <div class="expen_cont">
-                <div class="expen_cont_name">
-                    <p>Name of expenses</p> 
-                    <ul id="expen_name_li"></ul>
-                </div>
-                <div class="exp_cont_amount">
-                    <input type="text" placeholder="Enter Expenses Name" id="exp_text">
-                    <ul id="expenses_items_names"></ul>
-                </div>
-        </div>
-
-       <div class="amount-exp-deliver">
-           <div>
-               <p>Enter your daily amount source in naira(#) <hr>  </p>
-               <button id="btn_addAmount" >Add Amount</button>
-           </div>
-           <div>
-               <p>This coloumn containe your daily expenses <hr></p>
-               <button id="btn_addExpenses">Add Expenses</button>
-           </div>
-          
-       </div>
-    </div>
-    <script type="text/javascript"lang="javascript" src="track.js" >
-        
-const whole_income = document.getElementById("whole_income")
+          const whole_income = document.getElementById("whole_income")
 const amount_output = document.getElementById("amount_output")
 let amount_paid = document.getElementById("amount_paid")
 const expenses = document.getElementById("expenses")
@@ -303,6 +247,65 @@ function expen_removal_content() {
     expenses_items_names.innerHTML =letNameOfExpenses
     
 }
+    <script>
+        
+    </script>
+    <h3>Expenses Tracker</h3>
+    <h1 id="whole_income">0</h1>
+    <button id="clear_btn">Clear All</button>
+    <div class="container">
+        <div class="amount-expen">
+            <div class="amount">
+                <h3>INCOME</h3>
+                <h1 id="amount_output">+0</h1>
+                <input type="number" placeholder="Enter amount paid in" id="amount_paid">
+            </div>
+
+            <div class="exp">
+                <h3>ExPENSES</h3>
+                <h1 id="expenses_figure">-0</h1>
+                <input type="number" placeholder="Enter expenses amount" id="expenses" >
+            </div>
+        </div>
+
+        <div class="amount-expen-li">
+            <div class="amount-li">
+                <input type="text" placeholder="Enter the Source here" id="source_el">
+                <ul id="income_li"> </ul>
+                <p id="source_li_come"></p>
+
+            </div>
+            <div class="expen-li">
+                <p>Source Of Income</p>
+                <ul id="exp_li"></ul> 
+            </div>
+        </div>
+
+        <div class="expen_cont">
+                <div class="expen_cont_name">
+                    <p>Name of expenses</p> 
+                    <ul id="expen_name_li"></ul>
+                </div>
+                <div class="exp_cont_amount">
+                    <input type="text" placeholder="Enter Expenses Name" id="exp_text">
+                    <ul id="expenses_items_names"></ul>
+                </div>
+        </div>
+
+       <div class="amount-exp-deliver">
+           <div>
+               <p>Enter your daily amount source in naira(#) <hr>  </p>
+               <button id="btn_addAmount" >Add Amount</button>
+           </div>
+           <div>
+               <p>This coloumn containe your daily expenses <hr></p>
+               <button id="btn_addExpenses">Add Expenses</button>
+           </div>
+          
+       </div>
+    </div>
+    <script type="text/javascript"lang="javascript" src="track.js" >
+        
     </script>
 </body>
 </html>
